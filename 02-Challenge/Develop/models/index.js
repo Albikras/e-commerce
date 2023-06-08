@@ -21,16 +21,16 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
   },
 
-  as: testingVarible,
+  as: "testingVarible",
 });
 
 // Tags belongToMany Products (through ProductTag)
-TimeRanges.belongsToMany(Product, {
+Tag.belongsToMany(Product, {
   through: {
     model: ProductTag,
   },
 
-  as: testingVaribleTwo,
+  as: "testingVaribleTwo",
 });
 
 module.exports = {
