@@ -17,10 +17,10 @@ node, express, sequelize, mysql2
 
 ## Usage
 
-![test](test)
-![test](test)
-![test](test)
-![test](test)
+![GET in insomnia](./02-Challenge/Develop/images/insomnia1.png)
+![POST in insomnia](./02-Challenge/Develop/images/insomnia2.png)
+![PUT in insomnia](./02-Challenge/Develop/images/insomnia3.png)
+![DELETE in insomnia](./02-Challenge/Develop/images/insomnia5.png)
 
 ## License
 

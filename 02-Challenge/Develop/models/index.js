@@ -20,7 +20,7 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
   },
 
-  as: "testingVarible",
+  as: "name",
 });
 
 // Tags belongToMany Products (through ProductTag)
@@ -29,7 +29,7 @@ Tag.belongsToMany(Product, {
     model: ProductTag,
   },
 
-  as: "testingVarible",
+  as: "name",
 });
 
 module.exports = {

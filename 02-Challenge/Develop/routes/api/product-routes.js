@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
         {
           model: Tag,
           through: ProductTag,
-          as: "testingVarible",
+          as: "name",
         },
       ],
     });
@@ -36,7 +36,7 @@ router.get("/:id", async (req, res) => {
         {
           model: Tag,
           through: ProductTag,
-          as: "testingVarible",
+          as: "name",
         },
       ],
     });
