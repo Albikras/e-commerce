@@ -41,3 +41,7 @@ If you want to reach me with additional question click my email link here: Krasn
 test
 
 ## Video
+
+
+https://github.com/Albikras/e-commerce/assets/124819029/c0a988a8-377b-407d-84cc-b80be2cca955
+
