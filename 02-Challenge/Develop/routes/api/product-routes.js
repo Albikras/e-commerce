@@ -14,12 +14,13 @@ router.get("/", async (req, res) => {
         {
           model: Tag,
           through: ProductTag,
-          as: "testOne",
+          as: "testingVarible",
         },
       ],
     });
     res.status(200).json(productData);
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });
@@ -35,7 +36,7 @@ router.get("/:id", async (req, res) => {
         {
           model: Tag,
           through: ProductTag,
-          as: "testOne",
+          as: "testingVarible",
         },
       ],
     });
@@ -121,10 +122,9 @@ router.put("/:id", (req, res) => {
 router.delete("/:id", async (req, res) => {
   try {
     const productData = await Product.destroy({ where: { id: req.params.id } });
-    res.status(200).json(productData);
     if (!productData) {
       res.status(404).json(productData);
-      return null;
+      return;
     }
     res.status(200).json(productData);
   } catch (err) {
